@@ -1,0 +1,31 @@
+/*container*/
+.container{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "main main main main"
+    "footer footer footer footer"
+    ;
+    height: 100vh;
+    gap: 20px;
+}
+nav{
+    grid-area: nav;
+    padding: 30px;
+    text-align: center;
+    background: rgb(164, 30, 166);
+}
+main{
+    grid-area: main;
+    padding: 300px;
+    text-align: center;
+    background: rgb(0, 107, 128);
+}
+footer{
+    grid-area: footer;
+    padding: 30px;
+    text-align: center;
+    background: gold;
+}
